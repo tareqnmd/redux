@@ -1,10 +1,12 @@
 import React from 'react';
+import { DecrementButton } from '../../styles/Countdown';
+
 
 const Decrement = () => {
     return (
-        <div>
-            
-        </div>
+        <DecrementButton>
+            Decrement
+        </DecrementButton>
     );
 };
 

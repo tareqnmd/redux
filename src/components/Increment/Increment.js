@@ -1,10 +1,11 @@
 import React from 'react';
+import { IncrementButton } from '../../styles/Countdown';
 
 const Increment = () => {
     return (
-        <div>
-            
-        </div>
+        <IncrementButton>
+            Increment
+        </IncrementButton>
     );
 };
 
