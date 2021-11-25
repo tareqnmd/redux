@@ -1,9 +1,9 @@
 import { INCREMENT,DECREMENT } from "./actionTypes"
 
-export const increment = (name) => {
-    return {type: INCREMENT, name}
+export const increment = (value) => {
+    return {type: INCREMENT, value}
 }
 
-export const removeTODO = (id) => {
-    return {type: DECREMENT, id}
+export const decrement = (value) => {
+    return {type: DECREMENT, value}
 }

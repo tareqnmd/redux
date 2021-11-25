@@ -4,6 +4,10 @@ const CountdownArea = styled.div`
     max-width: 400px;
     box-shadow: 0 0 12px #dfdfdf;
     padding: 20px;
+    margin: 0 auto;
+    h3{
+        text-align: center;
+    }
 `;
 
 const ButtonArea = styled.div`
