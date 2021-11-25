@@ -5,7 +5,7 @@ import { DecrementButton } from '../../styles/Countdown';
 const Decrement = () => {
     return (
         <DecrementButton>
-            Decrement
+            Decrement by 1
         </DecrementButton>
     );
 };
