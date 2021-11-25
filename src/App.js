@@ -1,12 +1,9 @@
 import './App.css';
+import Countdown from './components/Countdown/Countdown';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Mohammad Tareq
-      </header>
-    </div>
+    <Countdown/>
   );
 }
 

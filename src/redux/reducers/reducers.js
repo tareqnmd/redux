@@ -1,4 +1,4 @@
-import { ADD_TODO, DONE_TODO, REMOVE_TODO, UNDO_TODO } from "../actions/actionTypes";
+import { INCREMENT,DECREMENT } from "./actionTypes"
 
 let todo;
 
@@ -14,8 +14,7 @@ const initialState = {
 
 const reducers = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_TODO:
-            console.log(todo)
+        case INCREMENT:
             const createTodo = {
                 name: action.name,
                 isActive: true,
@@ -26,33 +25,11 @@ const reducers = (state = initialState, action) => {
             return {
                 ...state, todo: addTodo
             }
-        case REMOVE_TODO:
+        case DECREMENT:
             const remaining = state.todo.filter(todo => todo.id !== action.id);
             localStorage.setItem('todo', JSON.stringify(remaining))
             return {
                 ...state, todo: remaining
-            }
-        case DONE_TODO:
-            const doneTODO = state.todo.map(todo => {
-                if (todo.id === action.id) {
-                    todo.isActive = !todo.isActive;
-                }
-                return todo;
-            });
-            localStorage.setItem('todo', JSON.stringify(doneTODO));
-            return {
-                ...state, todo: doneTODO
-            }
-        case UNDO_TODO:
-            const undoTODO = state.todo.map(todo => {
-                if (todo.id === action.id) {
-                    todo.isActive = !todo.isActive;
-                }
-                return todo;
-            });
-            localStorage.setItem('todo', JSON.stringify(undoTODO));
-            return {
-                ...state, todo: undoTODO
             }
         default:
             return state;
