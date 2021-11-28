@@ -1,4 +1,3 @@
-import './App.css';
 import Countdown from './components/Countdown/Countdown';
 
 function App() {
