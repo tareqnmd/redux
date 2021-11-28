@@ -1,8 +1,10 @@
-import Countdown from './components/Countdown/Countdown';
+import Login from './pages/Login';
 
 function App() {
   return (
-    <Countdown/>
+    <>
+      <Login />
+    </>
   );
 }
 
