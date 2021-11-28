@@ -15,11 +15,13 @@ const initialState = {
 const reducers = (state = initialState, action) => {
     switch (action.type) {
         case INCREMENT:
+            console.log(value, 'increment');
             state.value++;
             localStorage.setItem('value', JSON.stringify(state.value));
             return state;
         case DECREMENT:
-            state.value++;
+            console.log(value, 'decrement');
+            state.value--;
             localStorage.setItem('value', JSON.stringify(state.value))
             return state;
         default:

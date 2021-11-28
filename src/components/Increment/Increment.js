@@ -5,7 +5,7 @@ import { increment } from '../../redux/actions/actions';
 
 const Increment = ({increment}) => {
     return (
-        <IncrementButton type="button" onClick={()=>{increment()}}>
+        <IncrementButton onClick={()=>increment()}>
             Increment by 1
         </IncrementButton>
     );
@@ -13,12 +13,12 @@ const Increment = ({increment}) => {
 
 const mapStateToProps = (state) => {
     return {
-        count: state.count
+        value: state.value
     }
 }
 
 const mapDispatchToProps = {
-    increment:increment,
+    increment,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Increment);

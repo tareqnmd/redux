@@ -5,9 +5,10 @@ const CountdownArea = styled.div`
     box-shadow: 0 0 12px #dfdfdf;
     padding: 20px;
     margin: 0 auto;
-    h3{
-        text-align: center;
-    }
+`;
+
+const CountdownResult = styled.h3`
+    text-align: center;
 `;
 
 const ButtonArea = styled.div`
@@ -22,6 +23,7 @@ const IncrementButton = styled.button`
     color: #ffffff;
     padding:4px 10px;
     border-radius:4px;
+    cursor: pointer;
 `;
 
 const DecrementButton = styled.button`
@@ -30,7 +32,8 @@ const DecrementButton = styled.button`
     color: #ffffff;
     padding:4px 10px;
     border-radius:4px;
+    cursor: pointer;
 `;
 
 export default CountdownArea;
-export { ButtonArea,IncrementButton,DecrementButton };
+export { ButtonArea, IncrementButton, DecrementButton, CountdownResult };
