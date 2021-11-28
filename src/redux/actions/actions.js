@@ -1,9 +1,9 @@
-import { INCREMENT,DECREMENT } from "./actionTypes"
+import { INCREMENT, DECREMENT } from "./actionTypes"
 
 export const increment = (value) => {
-    return {type: INCREMENT, value}
+    return { type: INCREMENT, value }
 }
 
 export const decrement = (value) => {
-    return {type: DECREMENT, value}
+    return { type: DECREMENT, value }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { CountdownResult } from '../../styles/Countdown';
 import { connect } from 'react-redux';
 
-const CountdownValue = ({value}) => {
+const CountdownValue = ({ value }) => {
     return (
         <CountdownResult>
             {value}
