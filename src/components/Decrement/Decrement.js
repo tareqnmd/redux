@@ -3,7 +3,7 @@ import { DecrementButton } from '../../styles/Countdown';
 import { connect } from 'react-redux';
 import { decrement } from '../../redux/actions/actions';
 
-const Decrement = ({ increment }) => {
+const Decrement = ({ decrement }) => {
     return (
         <DecrementButton onClick={() => decrement()}>
             Decrement by 1
